@@ -6,6 +6,7 @@ Created on Sat Mar 19 12:05 2022
 
 @author: Simas Janusas
 """
+from distutils.log import debug
 from nltk import PorterStemmer
 import numpy as np
 import pandas as pd
@@ -143,4 +144,4 @@ def upload_file():
     return response    
     
 if __name__=='__main__':
-    app.run(host='0.0.0.0')
+    app.run(debug=False, port=8080)
