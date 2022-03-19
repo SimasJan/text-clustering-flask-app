@@ -12,4 +12,4 @@ EXPOSE 5000
 
 ENTRYPOINT [ "python3" ]
 
-CMD ["text_cluster_api.py"]
+CMD ["app.py"]
