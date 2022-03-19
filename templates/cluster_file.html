@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en">
+        <title>Text Clustering | Upload Data</title>
+    </head>
+    <body>
+        <h2>Please select a dataset to upload.</h2>
+        <form method="post" enctype="multipart/form-data" action={{ url_for('upload_file') }}>
+            <span class="btn btn-primary btn-file">Browser
+                <input type="file" name="file"/>
+                <input type="submit" class="btn btn-success" value="Upload"/>
+            </span>
+        </form>
+    </body>
+</html>
