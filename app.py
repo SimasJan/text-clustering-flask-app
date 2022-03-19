@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 """
-Created on Fri Apr 13 12:02:27 2018
+Created on Sat Mar 19 12:05 2022
 
-@author: vivekkalyanarangan
+@author: Simas Janusas
 """
 from nltk import PorterStemmer
 import numpy as np
