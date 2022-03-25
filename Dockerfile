@@ -6,9 +6,11 @@ WORKDIR /app
 
 COPY . /app
 
+# install requirements
 RUN pip install -r requirements.txt
 
-EXPOSE 8080
+# exposing flask port
+EXPOSE 5000
 
 ENTRYPOINT [ "python3" ]
 
