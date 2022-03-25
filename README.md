@@ -21,6 +21,19 @@ A simple flask app to cluster unstructured (text) data that is uploaded by the u
 4. Open the localhost URL and navigate to `/cluster` to upload your text data to cluster.
 
 
+##### OpenShift
+
+Inside your project use the following command to create an application with a name 'text-cls-app' on port 5000 with a label 'text-cls-app'.
+
+`oc new-app https://github.com/SimasJan/text-clustering-flask-app --name=text-cls-app -port=5000:5000 -l app=text-cls-app`
+
+- Check status: `oc logs -f bc/text-cls-app`
+- Get all info: `oc get all`
+
+Expose service (app) to the outside WWW.
+
+`oc expose service/text-cls-app`
+
 #### Upload data format
 A sample of data input can be found in the `data/` directory.
 
